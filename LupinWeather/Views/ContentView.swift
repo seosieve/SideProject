@@ -8,26 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var colors: [Color] = [.blue, .green, .red, .orange]
+    
     var body: some View {
         VStack{
+            TitleView()
             MovingBannerView()
-            VStack {
-                Text("Test Text")
-                Spacer()
-                HStack {
-                    Text("Test Text")
-                    Text("Test Text")
-                }
-                
-                Spacer()
-                Text("Test Text")
-            }
-            .background(
-                LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.green]), startPoint: .leading, endPoint: .trailing)
-            )
-            .frame(width: 200, height: 200, alignment: .center)
+            SwipeView()
+            Spacer()
         }
-        
+        .frame(width: 344, height: 640)
     }
 }
 

@@ -37,36 +37,24 @@ extension NSPopover {
                 
                 
                 //야호 여기서 그라데이션 설정하면 댐
-                var gradientLayer = CAGradientLayer()
-                gradientLayer.frame = backgroundView.bounds
-                gradientLayer.colors = [NSColor.red.cgColor,NSColor.green.cgColor]
-                frameView.layer?.addSublayer(gradientLayer)
+//                var gradientLayer = CAGradientLayer()
+//                gradientLayer.frame = backgroundView.bounds
+//                gradientLayer.colors = [NSColor.red.cgColor,NSColor.green.cgColor]
+//                frameView.layer?.addSublayer(gradientLayer)
             }
         }
     }
     
     var backgroundColor: NSColor? {
         get {
-//            if let bgColor = backgroundView.layer?.backgroundColor {
-//                return NSColor(cgColor: bgColor)
-//            }
+            if let bgColor = backgroundView.layer?.backgroundColor {
+                return NSColor(cgColor: bgColor)
+            }
             return nil
         }
         set {
             backgroundView.wantsLayer = true
+            backgroundView.layer?.backgroundColor = newValue?.cgColor
         }
     }
-    
-//    var backgroundColor: NSColor? {
-//        get {
-//            if let bgColor = backgroundView.layer?.backgroundColor {
-//                return NSColor(cgColor: bgColor)
-//            }
-//            return nil
-//        }
-//        set {
-//            backgroundView.wantsLayer = true
-//            backgroundView.layer?.backgroundColor = newValue?.cgColor
-//        }
-//    }
 }
