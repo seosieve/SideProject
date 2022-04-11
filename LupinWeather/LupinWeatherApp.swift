@@ -31,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.contentViewController = NSViewController()
         popover.contentViewController?.view = NSHostingView(rootView: contentView)
         //Extension을 통한 backgroundColor 설정
-        popover.backgroundColor = NSColor.red
+        popover.backgroundColor = NSColor.blue
 
         //StatusBarButton
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)

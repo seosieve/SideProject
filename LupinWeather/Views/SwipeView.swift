@@ -9,16 +9,31 @@ import SwiftUI
 
 struct SwipeView: View {
     @State var index: Int = 0
+    @State var selectedIndex: Int = 0
+    
+    let titles: [String] =
+        ["First",
+         "Second",
+         "Third",
+         "Fourth",
+         "Fifth",
+        ]
     
     var body: some View {
         VStack {
-            SwiftUIPagerView(index: $index, pages: (0..<4).map { index in TitleView() })
-            
             Picker(selection: self.$index.animation(.easeInOut), label: Text("")) {
                 ForEach(0..<4) { page in Text("\(page + 1)").tag(page) }
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
+            SegmentedControlView(selectedIndex: $index, titles: titles)
+            Button("dawdawad") {
+                index += 1
+                let a = self.$index.animation(.easeInOut)
+            }
+            SwiftUIPagerView(index: $index, pages: (0..<4).map { a in TitleView() })
+            
+            
         }
     }
 }
@@ -57,7 +72,7 @@ struct SwiftUIPagerView<Content: View & Identifiable>: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 0) {
                     ForEach(self.pages) { page in
-                        page
+                        page 
                             .frame(width: geometry.size.width, height: nil)
                     }
                 }

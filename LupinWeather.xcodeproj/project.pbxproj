@@ -15,6 +15,9 @@
 		4E1905FC27F31ACA00C52EE6 /* MovingBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1905FB27F31ACA00C52EE6 /* MovingBannerView.swift */; };
 		4E19061E2801B61500C52EE6 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19061D2801B61500C52EE6 /* TitleView.swift */; };
 		4E1906202801B76700C52EE6 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19061F2801B76700C52EE6 /* SwipeView.swift */; };
+		4E1906402801DD7700C52EE6 /* RectPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063D2801DD7700C52EE6 /* RectPreference.swift */; };
+		4E1906412801DD7700C52EE6 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */; };
+		4E1906422801DD7700C52EE6 /* UnderlineModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		4E1905FB27F31ACA00C52EE6 /* MovingBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingBannerView.swift; sourceTree = "<group>"; };
 		4E19061D2801B61500C52EE6 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		4E19061F2801B76700C52EE6 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		4E19063D2801DD7700C52EE6 /* RectPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectPreference.swift; sourceTree = "<group>"; };
+		4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				4E1905EB27F3061C00C52EE6 /* ContentView.swift */,
+				4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */,
+				4E19063D2801DD7700C52EE6 /* RectPreference.swift */,
+				4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */,
 				4E1905FB27F31ACA00C52EE6 /* MovingBannerView.swift */,
 				4E19061D2801B61500C52EE6 /* TitleView.swift */,
 				4E19061F2801B76700C52EE6 /* SwipeView.swift */,
@@ -162,7 +171,10 @@
 				4E1905EC27F3061C00C52EE6 /* ContentView.swift in Sources */,
 				4E1905F927F3065B00C52EE6 /* Extensions.swift in Sources */,
 				4E1905FC27F31ACA00C52EE6 /* MovingBannerView.swift in Sources */,
+				4E1906402801DD7700C52EE6 /* RectPreference.swift in Sources */,
 				4E1906202801B76700C52EE6 /* SwipeView.swift in Sources */,
+				4E1906422801DD7700C52EE6 /* UnderlineModifier.swift in Sources */,
+				4E1906412801DD7700C52EE6 /* SegmentedControlView.swift in Sources */,
 				4E1905EA27F3061C00C52EE6 /* LupinWeatherApp.swift in Sources */,
 				4E19061E2801B61500C52EE6 /* TitleView.swift in Sources */,
 			);
