@@ -9,11 +9,34 @@ import SwiftUI
 
 struct TitleView: View, Identifiable {
     let id = UUID()
+    @StateObject var locationManager = LocationManager()
+    var weatherManager = WeatherManager()
+    @State var weather: ResponseBody?
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("Gangnam, Seoul")
-                .foregroundColor(.black)
+            if let location = locationManager.location {
+                if let weather = weather {
+                    Text(String(weather.current.temp))
+                        .foregroundColor(.black)
+                } else {
+                    LoadingView()
+                        .task {
+                            do {
+                                weather = try await weatherManager.getWeather(latitude: location.latitude, longitude: location.longitude)
+                            } catch {
+                                print("Error: \(error)")
+                            }
+                        }
+                }
+            } else {
+                if locationManager.isLoading {
+                    LoadingView()
+                } else {
+                    Text("Seoul")
+                        .foregroundColor(.black)
+                }
+            }
         }
         .frame(height: 44)
     }

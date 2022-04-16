@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    var colors: [Color] = [.blue, .green, .red, .orange]
-    
     var body: some View {
         VStack{
             TitleView()

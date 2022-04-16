@@ -18,6 +18,9 @@
 		4E1906402801DD7700C52EE6 /* RectPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063D2801DD7700C52EE6 /* RectPreference.swift */; };
 		4E1906412801DD7700C52EE6 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */; };
 		4E1906422801DD7700C52EE6 /* UnderlineModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */; };
+		4E190645280AAB8500C52EE6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E190644280AAB8500C52EE6 /* LocationManager.swift */; };
+		4E190647280AABA900C52EE6 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E190646280AABA900C52EE6 /* WeatherManager.swift */; };
+		4E7E0D45280ABE6F0045E50C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E0D44280ABE6F0045E50C /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		4E19063D2801DD7700C52EE6 /* RectPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectPreference.swift; sourceTree = "<group>"; };
 		4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineModifier.swift; sourceTree = "<group>"; };
+		4E190644280AAB8500C52EE6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4E190646280AABA900C52EE6 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		4E7E0D44280ABE6F0045E50C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +72,13 @@
 		4E1905E827F3061C00C52EE6 /* LupinWeather */ = {
 			isa = PBXGroup;
 			children = (
+				4E190643280AAB6F00C52EE6 /* Manager */,
 				4E1905FA27F3068F00C52EE6 /* Views */,
 				4E1905E927F3061C00C52EE6 /* LupinWeatherApp.swift */,
+				4E1905F827F3065B00C52EE6 /* Extensions.swift */,
 				4E1905ED27F3061E00C52EE6 /* Assets.xcassets */,
 				4E1905F227F3061E00C52EE6 /* LupinWeather.entitlements */,
 				4E1905EF27F3061E00C52EE6 /* Preview Content */,
-				4E1905F827F3065B00C52EE6 /* Extensions.swift */,
 			);
 			path = LupinWeather;
 			sourceTree = "<group>";
@@ -88,14 +95,24 @@
 			isa = PBXGroup;
 			children = (
 				4E1905EB27F3061C00C52EE6 /* ContentView.swift */,
+				4E7E0D44280ABE6F0045E50C /* LoadingView.swift */,
+				4E19061D2801B61500C52EE6 /* TitleView.swift */,
 				4E19063E2801DD7700C52EE6 /* SegmentedControlView.swift */,
 				4E19063D2801DD7700C52EE6 /* RectPreference.swift */,
 				4E19063F2801DD7700C52EE6 /* UnderlineModifier.swift */,
 				4E1905FB27F31ACA00C52EE6 /* MovingBannerView.swift */,
-				4E19061D2801B61500C52EE6 /* TitleView.swift */,
 				4E19061F2801B76700C52EE6 /* SwipeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4E190643280AAB6F00C52EE6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4E190644280AAB8500C52EE6 /* LocationManager.swift */,
+				4E190646280AABA900C52EE6 /* WeatherManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +187,12 @@
 			files = (
 				4E1905EC27F3061C00C52EE6 /* ContentView.swift in Sources */,
 				4E1905F927F3065B00C52EE6 /* Extensions.swift in Sources */,
+				4E190645280AAB8500C52EE6 /* LocationManager.swift in Sources */,
 				4E1905FC27F31ACA00C52EE6 /* MovingBannerView.swift in Sources */,
 				4E1906402801DD7700C52EE6 /* RectPreference.swift in Sources */,
+				4E7E0D45280ABE6F0045E50C /* LoadingView.swift in Sources */,
 				4E1906202801B76700C52EE6 /* SwipeView.swift in Sources */,
+				4E190647280AABA900C52EE6 /* WeatherManager.swift in Sources */,
 				4E1906422801DD7700C52EE6 /* UnderlineModifier.swift in Sources */,
 				4E1906412801DD7700C52EE6 /* SegmentedControlView.swift in Sources */,
 				4E1905EA27F3061C00C52EE6 /* LupinWeatherApp.swift in Sources */,

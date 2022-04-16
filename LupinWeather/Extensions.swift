@@ -34,9 +34,7 @@ extension NSPopover {
                 backgroundView.autoresizingMask = [.width, .height]
                 frameView.addSubview(backgroundView, positioned: .below, relativeTo: contentView)
                 
-                
-                
-                //야호 여기서 그라데이션 설정하면 댐
+                //background Gradient 필요할 때 설정
 //                var gradientLayer = CAGradientLayer()
 //                gradientLayer.frame = backgroundView.bounds
 //                gradientLayer.colors = [NSColor.red.cgColor,NSColor.green.cgColor]
@@ -45,6 +43,7 @@ extension NSPopover {
         }
     }
     
+    //NSPopover set background color
     var backgroundColor: NSColor? {
         get {
             if let bgColor = backgroundView.layer?.backgroundColor {

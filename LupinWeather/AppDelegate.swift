@@ -1,22 +1,11 @@
 //
-//  LupinWeatherApp.swift
+//  AppDelegate.swift
 //  LupinWeather
 //
-//  Created by 서충원 on 2022/03/29.
+//  Created by 서충원 on 2022/04/16.
 //
 
 import SwiftUI
-
-@main
-struct LupinWeatherApp: App {
-    //AppDelegate 연결
-    @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
@@ -49,4 +38,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 }
-
