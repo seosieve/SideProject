@@ -89,7 +89,9 @@ private struct SegmentedControlButtonView: View {
 			ForEach(titles.indices, id: \.self) { index in
 				Button(action:{
                     selectedIndex = index
-                    self.$selectedIndex.animation(.easeInOut) })
+                    print(selectedIndex)
+                })
+//                NavigationLink(destination: Text("aa"), isActive: {Text("ddad")}())
 				{
 					HStack {
 						Text(titles[index])
@@ -112,7 +114,6 @@ private struct SegmentedControlButtonView: View {
 
 	private func setFrame(index: Int, frame: CGRect) {
 		self.frames[index] = frame
-
 		checkIsScrollable()
 	}
 }

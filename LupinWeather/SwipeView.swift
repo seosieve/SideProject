@@ -27,13 +27,14 @@ struct SwipeView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
             SegmentedControlView(selectedIndex: $index, titles: titles)
-            Button("dawdawad") {
+            Button(action: {
                 index += 1
-                let a = self.$index.animation(.easeInOut)
+//                <Selection> = self.$index.animation(.easeInOut)
+            })
+            {
+                Text("aaaa")
             }
             SwiftUIPagerView(index: $index, pages: (0..<4).map { a in TitleView() })
-            
-            
         }
     }
 }
@@ -66,6 +67,8 @@ struct SwiftUIPagerView<Content: View & Identifiable>: View {
 
     // 1
     var pages: [Content]
+    
+    
 
     var body: some View {
         GeometryReader { geometry in

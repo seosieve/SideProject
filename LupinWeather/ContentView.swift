@@ -12,7 +12,8 @@ struct ContentView: View {
         VStack{
             TitleView()
             MovingBannerView()
-            SwipeView()
+            ScrollableView()
+            LupinView()
             Spacer()
         }
         .frame(width: 344, height: 640)
